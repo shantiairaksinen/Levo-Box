@@ -267,7 +267,7 @@
     .printers-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
     .pc{background:var(--bg1);border:1px solid var(--bdr);border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:20px;transition:box-shadow .2s,transform .2s}
     .pc:hover{box-shadow:0 12px 40px rgba(28,78,156,.12);transform:translateY(-2px)}
-    .pc-img{border-radius:12px;overflow:hidden;background:var(--bg2);border:1px solid var(--bdr)}
+    .pc-img{aspect-ratio:1/1;position:relative;overflow:hidden;border-radius:12px;background:#f8f9fb;border:1px solid var(--bdr)}
     .pc-img-model{font-weight:800;font-size:22px;color:var(--blue);letter-spacing:.01em}
     .pc-img-type{font-size:12px;color:var(--t3);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
     .pc-img-stock{background:var(--blue);color:#fff;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px;margin-top:4px}
@@ -397,7 +397,7 @@
   <div class="nav-inner">
     <div class="nav-logo" style="display:flex;flex-direction:column;gap:3px">
       <img src="images/Logo_LevoBox_Horizontal.png" alt="Levo Box"
-           style="height:34px;width:auto;display:block;filter:brightness(0) invert(1)">
+           style="height:34px;width:auto;display:block">
       <span class="mark-sub id">Dealer Resmi Brother · Makassar</span>
       <span class="mark-sub en">Brother Authorized Partner · Makassar</span>
     </div>
@@ -466,8 +466,8 @@
 
       <!-- DCP-L2540DW -->
       <div class="pc">
-        <div class="pc-img" style="position:relative;background:#fff;padding:0;overflow:hidden">
-          <img loading="lazy" src="images/Brother_Printer_DCP_L2540DW.jpg" alt="Brother DCP-L2540DW" style="width:100%;height:auto;display:block">
+        <div class="pc-img">
+          <img loading="lazy" src="images/Brother_Printer_DCP_L2540DW.jpg" alt="Brother DCP-L2540DW" style="width:100%;height:100%;object-fit:contain;display:block">
           <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:999px;white-space:nowrap" class="id">2 Unit Tersedia</span>
           <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:999px;white-space:nowrap" class="en">2 Units In Stock</span>
           
@@ -505,8 +505,8 @@
 
       <!-- MFC-L2700D -->
       <div class="pc">
-        <div class="pc-img" style="position:relative;background:#fff;padding:0;overflow:hidden">
-          <img src="images/Brother_Printer_MFC_L2700D.jpg" alt="Brother MFC-L2700D" style="width:100%;height:auto;display:block" loading="lazy">
+        <div class="pc-img">
+          <img src="images/Brother_Printer_MFC_L2700D.jpg" alt="Brother MFC-L2700D" style="width:100%;height:100%;object-fit:contain;display:block" loading="lazy">
           <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:999px;white-space:nowrap" class="id">3 Unit Tersedia</span>
           <span style="position:absolute;bottom:10px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;font-size:11px;font-weight:700;padding:4px 14px;border-radius:999px;white-space:nowrap" class="en">3 Units In Stock</span>
 
